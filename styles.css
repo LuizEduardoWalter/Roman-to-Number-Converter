@@ -1,0 +1,105 @@
+* {
+  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+  font-family: "Segoe UI", "Roboto", sans-serif;
+}
+
+.outputThousand {
+  position: relative;
+  text-align: center;
+  background: transparent;
+  color: #000000;
+  font-weight: bold;
+  padding-top: 3px;
+}
+
+.outputThousand::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #000000;
+}
+
+.input {
+  width: 300px;
+  height: 30px;
+  border-radius: 6px;
+  background-color: white;
+  text-align: center;
+  font-size: 1.3em;
+  border: 1px solid #000000;
+  font-weight: bold;
+}
+
+.whiteBoard {
+  background: #fff;
+  padding: 50px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+h1,
+h4 {
+  text-align: center;
+}
+
+h2 {
+  background: #fff;
+}
+
+.button-bar {
+  width: 100%;
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+
+.button-bar button {
+  width: auto;
+  min-width: 30%;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  border: none;
+  background: #8ec5fc;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.button-bar button i {
+  font-size: 1.2em;
+  background: transparent;
+  color: #fff;
+}
+
+.output-bar {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000000;
+}
+
+.output-bar #output {
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  margin: 0;
+  font-size: 1.6em;
+  color: #000000;
+  min-height: 24px;
+  font-weight: bold;
+}

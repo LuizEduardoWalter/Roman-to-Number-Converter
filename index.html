@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roman to Number Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1 for="number">Conversor de Números Romanos</h1>
+    <h4 for="number">Converta números de 1 a 90.000 para numeração romana</h4>
+
+    <div class="whiteBoard">
+      <h2>Digite um número:</h2>
+      <input
+        class="input"
+        type="number"
+        id="number"
+        min="1"
+        max="90000"
+        step="1"
+      />
+      <div class="button-bar">
+        <button onclick="sendValue()">
+          Converter
+          <i class="fas fa-exchange-alt"></i>
+        </button>
+      </div>
+      <h2>Resultado:</h2>
+      <div class="output-bar">
+        <span id="output"></span>
+      </div>
+    </div>
+  </body>
+  <script src="main.js" defer></script>
+</html>
