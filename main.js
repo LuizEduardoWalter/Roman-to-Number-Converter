@@ -35,11 +35,11 @@ function converter(value) {
     return romanNumber.un;
   }
 
-  if (value >= 11 && value <= 99) {
+  if (value >= 10 && value <= 99) {
     let ten = Math.floor(value / 10);
     let resultUn = romanNumbers.find((rn) => rn.number === un);
     let resultTen = romanNumbers.find((rn) => rn.number === ten);
-    return resultTen.ten + resultUn.un;
+    return resultTen.ten + (resultUn?.un || "");
   }
 
   if (value >= 100 && value <= 999) {
